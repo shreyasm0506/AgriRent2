@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Equipment — AgriRent</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="top-strip">
+        <span>Delivering across Karnataka &middot; Bengaluru, Mysuru, Hubballi &amp; more</span>
+        <a href="/contact">Need help renting? Talk to us →</a>
+    </div>
+
+    <nav>
+        <a href="/home" class="logo">Agri<span>Rent</span></a>
+        <form class="nav-search" action="/equipment" method="get">
+            <select name="category" aria-label="Category">
+                <option value="">All categories</option>
+                <option value="tractor">Tractors</option>
+                <option value="harvestor">Harvesters</option>
+                <option value="rotavator">Rotavators</option>
+                <option value="cultivator">Cultivators</option>
+                <option value="sprayer">Sprayers</option>
+                <option value="trailer">Trailers</option>
+            </select>
+            <input type="text" name="q" placeholder="Search tractors, harvesters, rotavators...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="nav-links">
+            <a href="/login">Login</a>
+            <span class="divider"></span>
+            <a href="/register">Register</a>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="/home">Home</a> &nbsp;›&nbsp; <a href="/equipment">Equipment</a> &nbsp;›&nbsp; Book
+    </div>
+
+    <div class="booking-wrap" id="booking-wrap">
+        <p class="loading">Loading equipment details…</p>
+    </div>
+
+    <footer>
+        AgriRent &middot; Connecting farmers and equipment owners across India &middot;
+        <a href="/about" style="color:#cfe4d3;">About</a> &middot;
+        <a href="/contact" style="color:#cfe4d3;">Contact</a>
+    </footer>
+
+    <script src="/js/booking.js"></script>
+</body>
+
+</html>

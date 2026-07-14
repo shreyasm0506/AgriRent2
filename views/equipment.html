@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equipment — AgriRent</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="top-strip">
+        <span>Delivering across Karnataka &middot; Bengaluru, Mysuru, Hubballi &amp; more</span>
+        <a href="/contact">Need help renting? Talk to us →</a>
+    </div>
+
+    <nav>
+        <a href="/home" class="logo">Agri<span>Rent</span></a>
+        <form class="nav-search" action="/search" method="get">
+            <select name="category" aria-label="Category">
+                <option value="">All categories</option>
+                <option value="tractor">Tractors</option>
+                <option value="harvestor">Harvesters</option>
+                <option value="rotavator">Rotavators</option>
+                <option value="cultivator">Cultivators</option>
+                <option value="sprayer">Sprayers</option>
+                <option value="trailer">Trailers</option>
+            </select>
+            <input type="text" name="query" placeholder="Search tractors, harvesters, rotavators...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="nav-links">
+            <a href="/login">Login</a>
+            <span class="divider"></span>
+            <a href="/register">Register</a>
+        </div>
+    </nav>
+
+    <div class="category-rail">
+        <a href="#tractor">Tractors</a>
+        <a href="#harvestor">Harvesters</a>
+        <a href="#rotavator">Rotavators</a>
+        <a href="#cultivator">Cultivators</a>
+        <a href="#sprayer">Sprayers</a>
+        <a href="#trailer">Trailers</a>
+        <a href="/equipment" class="active">Browse all equipment</a>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="/home">Home</a> &nbsp;›&nbsp; Equipment
+    </div>
+
+    <div class="page-head">
+        <h1>Available Equipment</h1>
+        <p>1,240+ listings from verified owners near you</p>
+    </div>
+
+    <div class="catalog">
+        <aside class="filters">
+            <h4>Filters</h4>
+
+            <fieldset class="filter-group">
+                <legend>Category</legend>
+                <label><input type="checkbox" checked> Tractors</label>
+                <label><input type="checkbox" checked> Harvesters</label>
+                <label><input type="checkbox" checked> Rotavators</label>
+                <label><input type="checkbox" checked> Cultivators</label>
+                <label><input type="checkbox" checked> Sprayers</label>
+                <label><input type="checkbox" checked> Trailers</label>
+            </fieldset>
+
+            <fieldset class="filter-group">
+                <legend>Price per day</legend>
+                <label><input type="radio" name="price"> Under ₹500</label>
+                <label><input type="radio" name="price"> ₹500 – ₹1,000</label>
+                <label><input type="radio" name="price"> ₹1,000 – ₹2,000</label>
+                <label><input type="radio" name="price" checked> Any price</label>
+            </fieldset>
+
+            <fieldset class="filter-group">
+                <legend>Availability</legend>
+                <label><input type="checkbox" checked> Available today</label>
+                <label><input type="checkbox"> Available this week</label>
+            </fieldset>
+
+            <button class="btn-outline" style="width:100%;">Clear filters</button>
+        </aside>
+
+        <div class="results">
+            <div class="catalog-toolbar">
+                <span class="count">Showing 6 of 1,240 results</span>
+                <select aria-label="Sort by">
+                    <option>Sort: Recommended</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Highest Rated</option>
+                </select>
+            </div>
+
+            <div class="cards">
+                <p class="loading">Loading equipment…</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        AgriRent &middot; Connecting farmers and equipment owners across India &middot;
+        <a href="/about" style="color:#cfe4d3;">About</a> &middot;
+        <a href="/contact" style="color:#cfe4d3;">Contact</a>
+    </footer>
+
+    <script src="/js/equipment.js"></script>
+</body>
+
+</html>

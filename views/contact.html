@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — AgriRent</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="top-strip">
+        <span>Available across Karnataka &middot; Bengaluru, Mysuru, Hubballi &amp; more</span>
+        <a href="/contact">Need help renting? Talk to us →</a>
+    </div>
+
+    <nav>
+        <a href="/home" class="logo">Agri<span>Rent</span></a>
+        <form class="nav-search" action="/search" method="get">
+            <select name="category" aria-label="Category">
+                <option value="">All categories</option>
+                <option value="tractor">Tractors</option>
+                <option value="harvestor">Harvesters</option>
+                <option value="rotavator">Rotavators</option>
+                <option value="cultivator">Cultivators</option>
+                <option value="sprayer">Sprayers</option>
+                <option value="trailer">Trailers</option>
+            </select>
+            <input type="text" name="query" placeholder="Search tractors, harvesters, rotavators...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="nav-links">
+            <a href="/login">Login</a>
+            <span class="divider"></span>
+            <a href="/register">Register</a>
+        </div>
+    </nav>
+
+    <div class="category-rail">
+        <a href="/equipment#tractor">Tractors</a>
+        <a href="/equipment#harvestor">Harvesters</a>
+        <a href="/equipment#rotavator">Rotavators</a>
+        <a href="/equipment#cultivator">Cultivators</a>
+        <a href="/equipment#sprayer">Sprayers</a>
+        <a href="/equipment#trailer">Trailers</a>
+        <a href="/equipment">Browse all equipment</a>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="/home">Home</a> &nbsp;›&nbsp; Contact
+    </div>
+
+    <div class="auth-wrap">
+        <div class="feedback">
+            <h1>Contact Us</h1>
+            <p class="auth-sub">Questions about a booking, listing your equipment, or anything else — send us a note.</p>
+            <form action="/contact" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="50" rows="5" placeholder="Write your Message" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        AgriRent &middot; Connecting farmers and equipment owners across India &middot;
+        <a href="/about" style="color:#cfe4d3;">About</a> &middot;
+        <a href="/contact" style="color:#cfe4d3;">Contact</a>
+    </footer>
+</body>
+
+</html>
