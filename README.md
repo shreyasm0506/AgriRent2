@@ -114,4 +114,4 @@ This project serves as an academic project (2025–26) for the B.Tech Computer S
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [ GNU General Public License v3.0.](LICENSE).
